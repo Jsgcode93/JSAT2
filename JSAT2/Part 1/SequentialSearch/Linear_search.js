@@ -11,19 +11,16 @@ let key = 20;
 console.log(`key: ${key}`);
 
 // create the search function
-// parameters : array to search 
-//     the key value to be found
-// return number (index of element or -1 if not found)
 function linearSearch(array, target) {
     // set found value to -1 (not found)
     let found = -1;
     console.log('linear search called');
     
-    // log out the parameters (fixed variable name to 'array')
+    // log out the parameters 
     console.log(`Array: ${array}`);
     console.log(`target: ${target}`);
     
-    // loop through the array (added 'let' to loop index and fixed variable name to 'array')
+    // loop through the array
     for (let i = 0; i < array.length; i++) {
         console.log(`array[${i}]: ${array[i]}`);
         if (array[i] === target) {
