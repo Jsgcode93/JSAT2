@@ -13,3 +13,6 @@ console.log("Updated Movie:", myMovie);
         myMovie.rating = 4;
         myMovie.Year = 1962;
 console.log("Modified Movie:", myMovie);
+// 4. Remove the Summary property
+       delete myMovie.Summary;
+console.log("Movie after removing Summary:", myMovie);
