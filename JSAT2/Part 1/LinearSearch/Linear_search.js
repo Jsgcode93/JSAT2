@@ -1,13 +1,13 @@
-// file : linear_search.js
+// file : Linear_search.js
 // File demonstrates Linear search
 // Author: Jeremy 
 // Date 9/22/2026
 
-const searchArray = [10, 50, 30, 70, 80, 60, 20, 90, 40];
+const searchArray = [11, 22, 33, 44, 55, 66, 77, 88, 99];
 console.log(searchArray);
 
 // set the value we are searching 
-let key = 20;
+let key = 22;
 console.log(`key: ${key}`);
 
 // create the search function
@@ -32,7 +32,7 @@ function linearSearch(array, target) {
 }     
 
 // call the function 
-let result = linearSearch(searchArray, key);
+const result = linearSearch(searchArray, key);
 
 // output results 
 if (result === -1) {
