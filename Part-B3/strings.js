@@ -1,0 +1,47 @@
+// AUTHOR: Jeremy Geddes
+// DATE: October 2026
+// PURPOSE: AT2 Part 3 - String Manipulation 
+
+
+
+// --- Define Strings --- //
+const myString = "This is a string";
+const anotherString = "   Another string"; // 3 spaces at start
+const hello = "Hello there! ";
+const myName = "Jeremy";
+
+// ---  Length and charAt ---
+console.log("Length of myString:", myString.length);
+console.log("First character:", myString.charAt(0));
+console.log("11th character:", myString.charAt(10));
+
+// Slice "is a" from myString
+const slicedText = myString.slice(5, 9);
+console.log("Sliced text:", slicedText);
+
+// Use substring to get "the" from anotherString
+const subStringText = anotherString.substring(6, 9); 
+console.log("Substring text:", subStringText);
+
+// Print myName in all upper case
+console.log("Uppercase:", myName.toUpperCase());
+
+// Print myName in all lower case
+console.log("Lowercase:", myName.toLowerCase());
+
+// Concatenate hello and myname
+console.log("Concat:", hello.concat(myName));
+// Trim anotherString
+console.log("Trimmed:", anotherString.trim());
+// Replace "is a" with an empty string in myString
+console.log("Replaced:", myString.replace("is a", ""));
+// Split myString into an array of words
+console.log("Split:", myString.split(" "));
+
+const fs = require('fs');
+const fileData = "Jeremy Geddes - Part B3 File - completed";
+fs.writeFileSync('output.txt', fileData);
+console.log("File 'output.txt' written successfully.");
+
+const readData = fs.readFileSync('output.txt', 'utf8');
+console.log("Read from file:", readData);
